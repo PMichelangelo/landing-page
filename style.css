@@ -248,6 +248,9 @@ a {
   padding-left: 18px;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(90deg, rgba(73, 190, 255, 0.3) 0%, rgba(200, 82, 255, 0.28) 100%);
+  mix-blend-mode: normal;
+  filter: blur(46.1196px);
 }
 
 .article-img {
