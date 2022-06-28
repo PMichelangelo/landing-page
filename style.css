@@ -158,7 +158,6 @@ a {
 }
 
 .price-banner {
-  align-items: center;
   justify-content: center;
   flex-direction: row;
 }
