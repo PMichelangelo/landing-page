@@ -77,7 +77,6 @@ a {
 .hero-container {
   max-width: 500px;
   margin: 0;
-  border: 1px solid black;
 }
 
 .hero .title {
@@ -103,7 +102,6 @@ a {
   margin-right: 123px;
   margin-top: 24px;
   align-items: center;
-  border: 1px solid black;
 }
 
 .side-bar-items {
@@ -150,21 +148,64 @@ a {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  align-content: space-around;
+
   height: 277px;
   width: 880px;
   border: 1px solid black;
   margin-bottom: 59px;
 }
 
-.price-banner {
-  justify-content: center;
-  flex-direction: row;
+.img-banner-small {
+  padding-left: 20px;
 }
+
+
+.price-banner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 46px;
+}
+
 
 .money.money-baner {
   justify-content: flex-start;
+  width: fit-content;
+
 }
+
+.save.save-baner {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: flex-end;
+}
+
+.price.new {
+  margin-left: auto;
+  padding-left: auto;
+  margin-right: 30px;
+}
+
+.new-text {
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #83067f;
+  text-align: end;
+  border-bottom-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to left, #83067f 0%, transparent 100%) 1;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
 
 .banner-a {
   display: flex;
@@ -177,6 +218,12 @@ a {
   background-color: #1d1d1d;
   justify-content: center;
   align-items: center;
+  margin-right: 30px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .menu-items {
@@ -184,13 +231,13 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
-  border: 1px solid black;
+
   padding-left: 0;
   margin-left: 0;
 }
 
 .menu-item {
-  border: 1px solid black;
+
   width: 280px;
   height: 277px;
   list-style: none;
@@ -201,6 +248,7 @@ a {
 }
 
 .menu-item:hover {
+  border: 1px solid black;
   transform: scale(1.1);
 }
 
@@ -221,15 +269,11 @@ a {
 
 .price {
   display: flex;
-  width: 115px;
   height: 80px;
-  border: 1px solid black;
-  margin-left: auto;
   align-items: center;
 }
 
 .save {
-  border: 1px solid black;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -256,11 +300,9 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(73, 190, 255, 0.3) 0%,
-    rgba(200, 82, 255, 0.28) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(73, 190, 255, 0.3) 0%,
+      rgba(200, 82, 255, 0.28) 100%);
   mix-blend-mode: normal;
   filter: blur(20px);
 }
