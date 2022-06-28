@@ -10,8 +10,7 @@ select,
 button {
   font-size: 16px;
   line-height: 1.15;
-  font-family: 'Poppins', sans-serif;
-  ;
+  font-family: "Poppins", sans-serif;
 }
 
 h1,
@@ -24,14 +23,13 @@ p {
   margin: 0;
 }
 
-
 body {
   margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: inherit
+  color: inherit;
 }
 
 .container {
@@ -47,7 +45,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
 }
 
 .nav-items {
@@ -63,7 +60,6 @@ a {
   padding: 0 15px;
 }
 
-
 .btn {
   border: 0;
   background: transparent;
@@ -71,7 +67,7 @@ a {
 }
 
 .btn.outline {
-  border: 2px solid #1D1D1D;
+  border: 2px solid #1d1d1d;
   border-radius: 18px;
   padding: 12px 40px;
   font-size: 18px;
@@ -100,7 +96,6 @@ a {
 .wrapper {
   display: flex;
   margin-top: 274px;
-
 }
 
 .side-bar {
@@ -109,9 +104,7 @@ a {
   margin-top: 24px;
   align-items: center;
   border: 1px solid black;
-
 }
-
 
 .side-bar-items {
   list-style: none;
@@ -126,29 +119,29 @@ a {
   font-weight: 400;
   line-height: 27px;
   margin-bottom: 40px;
+  padding-left: 25px;
   color: #808080;
   align-items: center;
+  position: relative;
 }
 
-.side-bar-item.first {
-  margin-bottom: 27px;
-}
-
-.side-bar-item>a {
-  margin-left: 25px;
-}
-
-.side-bar-item:before {
+.side-bar-item::before {
+  content: "";
   position: absolute;
-
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  border-radius: 5px;
 }
 
 .side-bar-item:hover {
-  box-sizing: border-box;
-  color: #1D1D1D;
+  color: #1d1d1d;
   font-weight: 600;
-  border-left: 5px solid #83067F;
-  border-radius: 5px;
+}
+
+.side-bar-item:hover::before {
+  background-color: #83067f;
 }
 
 .banner {
@@ -161,7 +154,7 @@ a {
   height: 277px;
   width: 880px;
   border: 1px solid black;
-  margin-bottom: 59px
+  margin-bottom: 59px;
 }
 
 .price-banner {
@@ -169,8 +162,6 @@ a {
   justify-content: center;
   flex-direction: row;
 }
-
-.save.save-baner {}
 
 .money.money-baner {
   justify-content: flex-start;
@@ -180,20 +171,20 @@ a {
   display: flex;
   font-size: 24px;
   color: #fff;
-  border: 1px solid #1D1D1D;
+  border: 1px solid #1d1d1d;
   border-radius: 100%;
   min-width: 50px;
   min-height: 50px;
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
   justify-content: center;
   align-items: center;
 }
 
 .menu-items {
   display: flex;
-  height: 287px;
-  justify-content: space-around;
-  margin-bottom: 35px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
   border: 1px solid black;
   padding-left: 0;
   margin-left: 0;
@@ -204,21 +195,13 @@ a {
   width: 280px;
   height: 277px;
   list-style: none;
-  margin-top: 5px;
   position: relative;
   padding-bottom: 50px;
   border-radius: 20px;
 }
 
 .menu-item:hover {
-  border: 1px solid black;
-  width: 290px;
-  height: 287px;
-  list-style: none;
-  margin-top: 0;
-  position: relative;
-  padding-bottom: 50px;
-  border-radius: 20px;
+  transform: scale(1.1);
 }
 
 .menu-item:hover .save {
@@ -236,8 +219,6 @@ a {
   display: none;
 }
 
-
-
 .price {
   display: flex;
   width: 115px;
@@ -252,10 +233,9 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  color: #83067F;
+  color: #83067f;
   text-transform: uppercase;
 }
-
 
 .money {
   display: flex;
@@ -264,14 +244,14 @@ a {
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
-  color: #1D1D1D;
+  color: #1d1d1d;
   padding-left: 18px;
   align-items: center;
   justify-content: center;
 }
 
 .article-img {
-  padding-top: 15px
+  padding-top: 15px;
 }
 
 .menu-description {
@@ -283,7 +263,7 @@ a {
 
 .menu-a {
   display: flex;
-  width: inherit;
+  width: 100%;
   height: 50px;
   position: absolute;
   bottom: 0;
@@ -295,5 +275,5 @@ a {
   border-bottom-right-radius: 20px;
   font-size: 30px;
   color: #fff;
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
 }
