@@ -37,12 +37,20 @@ a {
 }
 
 .container {
-  max-width: 1188px;
+  max-width: 1180px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .header {
   padding-top: 47px;
+  padding-right: 74px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .nav-bar {
@@ -51,11 +59,14 @@ a {
   justify-content: flex-end;
 }
 
+
 .nav-items {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-right: 60px;
+  margin-top: 10px;
 }
 
 .nav-item {
@@ -78,6 +89,14 @@ a {
   font-weight: 500;
 }
 
+
+.hero {
+  height: 612px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .hero-container {
   max-width: 500px;
   margin: 0;
@@ -87,31 +106,30 @@ a {
   font-size: 48px;
   line-height: 64px;
   font-weight: 600;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .hero .description {
   font-size: 16px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 26px;
 }
 
 .wrapper {
   display: flex;
-  margin-top: 274px;
+  margin-top: 100px;
 }
 
 .side-bar {
   width: 177px;
   margin-right: 123px;
-  margin-top: 24px;
-  align-items: center;
 }
 
 .side-bar-items {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 30px;
 }
 
 .side-bar-item {
@@ -120,7 +138,7 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding-left: 25px;
   color: #808080;
   align-items: center;
@@ -144,6 +162,8 @@ a {
 
 .side-bar-item:hover::before {
   background-color: #83067f;
+  transition: all 0.5s ease-in-out;
+
 }
 
 .banner {
@@ -249,6 +269,7 @@ a {
 .menu-item:hover {
   border: 1px solid black;
   transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-item:hover .save {
@@ -299,13 +320,16 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(73, 190, 255, 0.3) 0%,
-    rgba(200, 82, 255, 0.28) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(73, 190, 255, 0.3) 0%,
+      rgba(200, 82, 255, 0.28) 100%);
   mix-blend-mode: normal;
   filter: blur(20px);
+}
+
+.menu-item:hover .money::before {
+  transform: scale(5);
+
 }
 
 .article-img {
@@ -321,20 +345,57 @@ a {
 
 .menu-a {
   display: flex;
-  width: 100%;
+  width: 560px;
   height: 50px;
   position: absolute;
   bottom: 0;
   align-items: center;
-  justify-content: end;
-  padding-right: 30px;
+  justify-content: center;
+  padding: 0 30px;
   padding-left: 0;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   font-size: 30px;
   color: #fff;
   background-color: #1d1d1d;
+  overflow: hidden;
+  transform: translateX(-280px);
 }
+
+.transition {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.menu-item:hover .menu-a {
+  transform: translatex(0px);
+  transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+  display: flex;
+  width: 280px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 30px;
+  text-transform: uppercase;
+}
+
+
+
+
+
 
 .banner2 {
   display: flex;
@@ -347,11 +408,9 @@ a {
   height: 277px;
 
   color: #1d1d1d;
-  background: linear-gradient(
-    94.73deg,
-    #eff9ff 1.96%,
-    rgba(252, 245, 255, 0.58) 91.67%
-  );
+  background: linear-gradient(94.73deg,
+      #eff9ff 1.96%,
+      rgba(252, 245, 255, 0.58) 91.67%);
   border: 4px solid rgba(255, 255, 255, 0.4);
 
   box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
@@ -386,19 +445,19 @@ a {
 
   position: relative;
 }
+
 .offer::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
 
-  background: linear-gradient(
-    90deg,
-    rgba(73, 190, 255, 0.3) 0%,
-    rgba(200, 82, 255, 0.28) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(73, 190, 255, 0.3) 0%,
+      rgba(200, 82, 255, 0.28) 100%);
   filter: blur(46.1196px);
 }
+
 .offer-title {
   font-weight: 400;
   font-size: 18px;
@@ -443,6 +502,7 @@ a {
   height: 50px;
   border-radius: 50px;
 }
+
 .btn.black {
   background: #1d1d1d;
   color: #fff;
